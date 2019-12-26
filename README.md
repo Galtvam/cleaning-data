@@ -2,14 +2,13 @@
 This work was developed as the final project of the course [**Getting and Cleaning Data**](https://www.coursera.org/learn/data-cleaning?specialization=jhu-data-science) offered by **The Johns Hopkins University** through the **Coursera** platform.
 
 ## Abstract about the data 
-Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
-As experiências foram realizadas com um grupo de 30 voluntários com idade entre 19 e 48 anos. Cada pessoa realizou seis atividades (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) usando um smartphone (Samsung Galaxy S II) na cintura. Usando seu acelerômetro e giroscópio embutido, capturamos a aceleração linear 3-axial e a velocidade angular 3-axial a uma taxa constante de 50Hz.
+Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.
 For more datails access [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 **Obs: All information was collected from the official repository.**
 
 ## Data Organization
 The experiment data were separated into two large sets, one for training and one for testing there are 30 individuals who performed 6 different types of activities and for each observation, there are 561 variables that keep normalized values ​​ranging from 1 to -1.
-For more details consult the [README](/data/UCI HAR Dataset/README.txt) of the data.
+For more details consult the [README](/data/UCI-HAR-Dataset/README.txt) of the data.
 
 ## Project Proposal
 The goal of the project is to deliver three artifacts, the first is the complete dataset containing the training and test data, with the correctly named columns and the activities with descriptive names, the second and third artifacts consist of analyzes that must be performed on the full dataset:

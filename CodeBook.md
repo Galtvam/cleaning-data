@@ -1,7 +1,7 @@
 # Data
 
 ### Origin
-The data was loaded from the directory: **./data/UCI HAR Dataset**, which corresponds to the folder obtained after extracting the compressed data. (see [README.md](/README.md))
+The data was loaded from the directory: **./data/UCI-HAR-Dataset**, which corresponds to the folder obtained after extracting the compressed data. (see [README.md](/README.md))
 
 ### Method of Reading
 Because the data was stored in **.txt** format it was necessary to do the following sequence of steps:

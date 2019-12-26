@@ -71,7 +71,7 @@ mean_per_subject_and_activity <- function(data, subjects, activities){
 # LOADING COLUMNS NAMES #
 # $$$$$$$$$$$$$$$$$$$$$ #
 
-features_path <- "./data/UCI HAR Dataset/features.txt"
+features_path <- "./data/UCI-HAR-Dataset/features.txt"
 col_labels <- readLines(features_path)
 splitted_col_labels <- strsplit(col_labels, " ")
 
@@ -87,7 +87,7 @@ clean_col_labels <- clear_names(splitted_col_labels)
 # READING ACTIVITY LABELS #
 ###########################
 
-y_test_path <- "./data/UCI HAR Dataset/test/y_test.txt"
+y_test_path <- "./data/UCI-HAR-Dataset/test/y_test.txt"
 test_labels <- readLines(y_test_path)
 
 descriptive_test_labels <- gsub("1", tolower("WALKING"), test_labels)
@@ -102,7 +102,7 @@ descriptive_test_labels <- gsub("6", tolower("LAYING"), descriptive_test_labels)
 # READING OF SUBJECTS #
 #######################
 
-subject_test_path <- "./data/UCI HAR Dataset/test/subject_test.txt"
+subject_test_path <- "./data/UCI-HAR-Dataset/test/subject_test.txt"
 test_subject <- readLines(subject_test_path)
 
 
@@ -110,7 +110,7 @@ test_subject <- readLines(subject_test_path)
 # READING OBSERVATIONS AND DATASET CREATION #
 #############################################
 
-x_test_path <- "./data/UCI HAR Dataset/test/X_test.txt"
+x_test_path <- "./data/UCI-HAR-Dataset/test/X_test.txt"
 test_data <- readLines(x_test_path)
 test_dataset <- clean_data(test_data)
 
@@ -130,7 +130,7 @@ test_dataset$activity <- descriptive_test_labels
 # READING ACTIVITY LABELS #
 ###########################
 
-y_train_path <- "./data/UCI HAR Dataset/train/y_train.txt"
+y_train_path <- "./data/UCI-HAR-Dataset/train/y_train.txt"
 train_labels <- readLines(y_train_path)
 
 descriptive_train_labels <- gsub("1", tolower("WALKING"), train_labels)
@@ -145,7 +145,7 @@ descriptive_train_labels <- gsub("6", tolower("LAYING"), descriptive_train_label
 # READING OF SUBJECTS #
 #######################
 
-subject_train_path <- "./data/UCI HAR Dataset/train/subject_train.txt"
+subject_train_path <- "./data/UCI-HAR-Dataset/train/subject_train.txt"
 train_subject <- readLines(subject_train_path)
 
 
@@ -153,7 +153,7 @@ train_subject <- readLines(subject_train_path)
 # READING OBSERVATIONS AND DATASET CREATION #
 #############################################
 
-x_train_path <- "./data/UCI HAR Dataset/train/X_train.txt"
+x_train_path <- "./data/UCI-HAR-Dataset/train/X_train.txt"
 train_data <- readLines(x_train_path)
 train_dataset <- clean_data(train_data)
 

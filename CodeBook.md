@@ -42,18 +42,12 @@ The result of this analysis was obtained through the function **mean_per_subject
 
 
 # Important Variables
+* **test_dataset** - It has the dataset with the test data.
 
-### test_dataset
-It has the dataset with the test data.
+* **train_dataset** - It has the dataset with the training data.
 
-### train_dataset
-It has the dataset with the training data.
+* **full_dataset** - Has combined test + training dataset.
 
-### full_dataset
-Has combined test + training dataset.
+* **mean_and_sd_analysis** - It has the dataset containing the mean and standard deviation of each variable of full_dataset.
 
-### mean_and_sd_analysis
-It has the dataset containing the mean and standard deviation of each variable of full_dataset.
-
-### mean_per_subject_and_activity_analysis
-It has the data set that contains the average of all variables for each activity performed by each subject.
+* **mean_per_subject_and_activity_analysis** - It has the data set that contains the average of all variables for each activity performed by each subject.

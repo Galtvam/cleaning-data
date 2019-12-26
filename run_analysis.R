@@ -169,10 +169,10 @@ train_dataset$activity <- descriptive_train_labels
 # FINAL DATA ASSEMBLY (TRAINING + TEST) #
 # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ #
 
-full_data <- rbind(train_dataset, test_dataset, by= names(train_dataset))
-full_data <- full_data[-10300,] #remove last row with column names
+full_dataset <- rbind(train_dataset, test_dataset, by= names(train_dataset))
+full_dataset <- full_dataset[-10300,] #remove last row with column names
 
-# "full_data" match the dataset with all the data
+# "full_dataset" match the dataset with all the data
 
 
 
@@ -184,14 +184,14 @@ full_data <- full_data[-10300,] #remove last row with column names
 # 2x561 DATASET WITH MEDIA AND STANDARD DEVIATION FOR EVERY VARIABLE #
 ######################################################################
 
-mean_and_sd_analysis <- mean_and_sd(full_data[, -562:-563]) #remove subject and activity columns
+mean_and_sd_analysis <- mean_and_sd(full_dataset[, -562:-563]) #remove subject and activity columns
 
 
 
 ###################################################################################
-# 180x563 DATASET CONTAINING THE AVERAGE OF EACH VARIABLE BY ACTIVITY FOR SUBJECT #
+# 180x563 DATASET CONTAINING THE AVERAGE OF EACH VARIABLE BY ACTIVITY PER SUBJECT #
 ###################################################################################
 
-activities <- names(table(full_data[,563]))
-mean_per_subject_and_activity_analysis <-  mean_per_subject_and_activity(full_data, 1:30, activities)
+activities <- names(table(full_dataset[,563]))
+mean_per_subject_and_activity_analysis <-  mean_per_subject_and_activity(full_dataset, 1:30, activities)
 

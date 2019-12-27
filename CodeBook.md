@@ -6,26 +6,25 @@ The data was loaded from the directory: **./data/UCI-HAR-Dataset**, which corres
 ### Method of Reading
 Because the data was stored in **.txt** format it was necessary to do the following sequence of steps:
 
-* **First Step:** The files were read line by line (read.lines function) receiving a list containing each line (observation) of the dataset as a character array.
+* **First Step:** The files were read using read.table function.
 
-* **Second Step:** Each character array was split (using space as a divisor) and then transformed into a list containing each of the variable values.
+* **Second Step:** Columns name read from **features.txt** file.
 
-* **Third Step:** The empty strings were removed from lists that resulted from splitting.
+* **Third Step:** The number in front of the column names has been removed.
 
-* **Fourth Step:** Columns name read from **features.txt** file.
+* **Fourth Step:** Columns name are replaced by descriptive names.
 
-* **Sixth Step:** The number in front of the column names has been removed.
+* **Fifth Step:** The activity labels were loaded for the training and test set.
 
-* **Seventh Step:** The activity labels were loaded for the training and test set.
-
-* **Eighth Step:** The numerical identification of the activities has been replaced by descriptive names.
-
-* **Ninth Step:** The dataset was assembled, all resulting split lists became rows from the dataset and had their contents converted to values ​​(**as.numeric()**) that filled the columns.
+* **Sixth Step:** The numerical identification of the activities has been replaced by descriptive names.
 
 This way the training and test datasets were read.
 
 ### Full Dataset
 The complete dataset was assembled through the **cbind()** of training and test data.
+
+### Filtered Full Data
+Data filtered by subject, activity, and columns that have "mean" or "standard deviation" in their names.
 
 
 # Functions and Analysis

@@ -13,13 +13,13 @@ For more details consult the [README](/data/UCI-HAR-Dataset/README.txt) of the d
 ## Project Proposal
 The goal of the project is to deliver three artifacts, the first is the complete dataset containing the training and test data, with the correctly named columns and the activities with descriptive names, the second and third artifacts consist of analyzes that must be performed on the full dataset:
 * Second artifact: A data set that contains the mean and standard deviation of each of the 561 variables.
-* Third artifact: A data set containing the average of each of the 561 variables, segmented by the activity to which they belong and which subject performed them.
+* Third artifact: A data set containing the average of 88 mean and standart deviation variables, segmented by the activity to which they belong and which subject performed them.
 
 ## "run_analysis.R" Script
-This script completes all the steps described in [CodeBook.md](/CodeBook.md), reads all data, assembles all datasets (training, testing, full) and performs the analysis described in [Project Proposal](#Project-Proposal).
+This script completes all the steps described in [CodeBook.md](/CodeBook.md), reads all data, assembles all datasets (training, testing, full), filtered per mean and standart deviation variables and performs the analysis described in [Project Proposal](#Project-Proposal).
 
 ## Finished Datasets
-In the folder [**data**](/data) are the three project artifacts, exported in **.csv** format, they are:
+In the folder [**data**](/data) are the three project artifacts, exported in **.csv** and **.txt** format, they are:
 * **First artifact**: ["UCI_HAR_full_data.csv"](/data/UCI_HAR_full_data.csv)
-* **Second artifact**: ["mean_and_sd_analysis.csv"](/data/mean_and_sd_analysis.csv)
-* **Third artifact**: ["mean_activity_subject_analysis.csv"](/data/mean_activity_subject_analysis.csv)
+* **Second artifact**: ["mean_n_sd_all_data.txt"](/data/mean_n_sd_all_data.txt)
+* **Third artifact**: ["mean_per_act_by_suj_analysis.txt"](/data/mean_per_act_by_suj_analysis.txt)

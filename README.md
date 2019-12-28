@@ -8,7 +8,7 @@ For more datails access [Human Activity Recognition Using Smartphones Data Set](
 
 ## Data Organization
 The experiment data were separated into two large sets, one for training and one for testing there are 30 individuals who performed 6 different types of activities and for each observation, there are 561 variables that keep normalized values ​​ranging from 1 to -1.
-For more details consult the [README](/data/UCI-HAR-Dataset/README.txt) of the data.
+For more details consult the [README](/data/DATA_README.txt) of the data.
 
 ## Project Proposal
 The goal of the project is to deliver three artifacts, the first is the complete dataset containing the training and test data, with the correctly named columns and the activities with descriptive names, the second and third artifacts consist of analyzes that must be performed on the full dataset:
